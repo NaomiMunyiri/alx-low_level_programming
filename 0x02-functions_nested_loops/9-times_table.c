@@ -8,7 +8,7 @@ void times_table(void)
 	int a = 0;
 	int b;
 	int repeat;
-	ehile (a <= 9)
+	while (a <= 9)
 	{
 		b = 0;
 		while (b <= 9)
@@ -16,7 +16,7 @@ void times_table(void)
 			repeat = a * b;
 			if (b == 0)
 			{
-				_putchar('0' + rep);
+				_putchar('0' + repeat);
 			}
 			else if (repeat < 10)
 			{
@@ -38,4 +38,4 @@ void times_table(void)
 		_putchar('\n');
 		a++;
 	}
-}
+i}
