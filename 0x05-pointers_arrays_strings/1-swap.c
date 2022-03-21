@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 /**
  * swap_int - swaps value of two ints
  * @x: pointer of one int
