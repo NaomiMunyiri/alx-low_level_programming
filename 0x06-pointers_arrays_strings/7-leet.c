@@ -3,7 +3,7 @@
 /**
  * *leet - encode into 1337speak
  * @n: input
- * Return: n 
+ * Return: n
  */
 char *leet(char *n)
 {
