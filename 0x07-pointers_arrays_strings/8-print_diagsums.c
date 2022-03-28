@@ -14,3 +14,4 @@ void print_diagsums(int *a, int size)
 	for (x = size - 1; x < (size * size) - (size - 1); x += (size - 1))
 		z += a[x];
 	printf("%d, %d\n", y, z);
+}
