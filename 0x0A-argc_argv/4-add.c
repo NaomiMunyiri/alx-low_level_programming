@@ -9,10 +9,10 @@
  * Return: 0
  */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 
-	int x , y, add = 0;
+	int x, y, add = 0;
 
 	for (x = 1; x < argc; x++)
 	{
