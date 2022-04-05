@@ -3,18 +3,18 @@
 
 /**
  * isInteger - checks is x is an integer
- * @x: string
+ * @s: string
  * Return: 0 or 1
  */
 
-int isInteger(const char *x)
+int isInteger(const char *s)
 {
 	int i = 0;
 	
-	while (x[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if (x[i] < '0' || x[i] > '0')
-			reurn (1);
+		if (s[i] < '0' || s[i] > '0')
+			return (1);
 		i++;
 	}
 	return (0);
