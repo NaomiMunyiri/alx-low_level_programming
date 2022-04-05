@@ -1,24 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-/**
- * isInteger - checks is x is an integer
- * @s: string
- * Return: 0 or 1
- */
-
-int isInteger(const char *s)
-{
-	int i = 0;
-	
-	while (s[i] != '\0')
-	{
-		if (s[i] < '0' || s[i] > '0')
-			return (1);
-		i++;
-	}
-	return (0);
-}
+#include <ctype.h>
 
 /**
  * main - adds pos numbers
@@ -29,18 +11,21 @@ int isInteger(const char *s)
 
 int main(int argc, char const *argv[])
 {
-	int sum = 0;
 
-	while (--argc)
+	int x , y, add = 0;
+
+	for (x = 1; x < argc; x++)
 	{
-		if (isInteger(argv[argc]))
+		for (y = 0; argv[x][y] != '\0'; y++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!isdigit(argv[x][y]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		sum += atoi(argv[argc]);
+		add += atoi(argv[x]);
 	}
-	printf("%i\n", sum);
+	printf("%d\n", add);
 	return (0);
 }
-
