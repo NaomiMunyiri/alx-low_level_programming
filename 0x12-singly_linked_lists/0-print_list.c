@@ -21,3 +21,4 @@ size_t print_list(const list_t *h)
 		nbr_nodes++;
 	}
 	return (nbr_nodes);
+}
